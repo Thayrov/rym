@@ -35,7 +35,7 @@ const App = () => {
   const dispatch = useDispatch();
 
   const register = async userData => {
-    const URL = 'http://localhost:3001/rickandmorty/login';
+    const URL = 'https://rym-5s7g.onrender.com/rickandmorty/login';
     try {
       await axios.post(URL, userData);
       setShowPortalScreen(true);
@@ -55,7 +55,7 @@ const App = () => {
 
   const login = async userData => {
     const {email, password} = userData;
-    const URL = 'http://localhost:3001/rickandmorty/login';
+    const URL = 'https://rym-5s7g.onrender.com/rickandmorty/login';
     try {
       const {
         data: {access},
@@ -122,7 +122,7 @@ const App = () => {
 
   const onSearch = async id => {
     try {
-      const {data} = await axios(`http://localhost:3001/rickandmorty/character/${id}`);
+      const {data} = await axios(`https://rym-5s7g.onrender.com/rickandmorty/character/${id}`);
       handleResponse(data);
     } catch (error) {
       handleError(id, error);

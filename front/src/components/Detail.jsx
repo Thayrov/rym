@@ -45,7 +45,7 @@ const Detail = () => {
   const originName = origin?.name;
   useEffect(() => {
     // axios(`${URL}/${id}?key=${API_KEY}`).then(handleResponse).catch(handleError);
-    axios(`http://localhost:3001/rickandmorty/character/${id}`)
+    axios(`https://rym-5s7g.onrender.com/rickandmorty/character/${id}`)
       .then(handleResponse)
       .catch(handleError);
   }, [id, handleResponse, handleError]);

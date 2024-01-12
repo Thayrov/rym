@@ -10,7 +10,7 @@ export const FILTER_BY_SPECIES = 'FILTER_BY_SPECIES';
 
 // Action Creators
 export const addFav = character => {
-  const endpoint = 'http://localhost:3001/rickandmorty/fav';
+  const endpoint = 'https://rym-5s7g.onrender.com/rickandmorty/fav';
 
   return async dispatch => {
     try {
@@ -46,7 +46,7 @@ export const orderCards = orden => ({
 });
 
 export const removeFav = id => {
-  const endpoint = `http://localhost:3001/rickandmorty/fav/${id}`;
+  const endpoint = `https://rym-5s7g.onrender.com/rickandmorty/fav/${id}`;
 
   return async dispatch => {
     try {
