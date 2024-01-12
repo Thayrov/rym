@@ -1,0 +1,23 @@
+//https://dbdiagram.io/d/RyM-659c92baac844320ae7e50ff
+
+TABLE users {
+  id int [PK]
+  email varchar(35)
+  password varchar(10)
+}
+
+TABLE characters {
+  id int [PK]
+  name varchar(255)
+  species varchar(255)
+  gender varchar(255)
+  status varchar(255)
+  origin varchar(255)
+  image varchar(255)
+}
+
+TABLE user_character {
+  id int [PK]
+  user_id int [ref: < users.id]
+  character_id int [ref: < characters.id]
+}
