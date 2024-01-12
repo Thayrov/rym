@@ -4,7 +4,7 @@ import {
   Name,
   ProfileImage,
   ProfileInfo,
-} from '../styles/About/About.styles';
+} from '../styles/about/About.styles';
 import {Screen} from '../styles/card/Card.styles';
 
 const About = () => {
