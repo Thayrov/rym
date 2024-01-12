@@ -9,7 +9,7 @@ import {
   CharacterName,
   DetailContainer,
   SmallerCharacterName,
-} from '../styles/detail/DEtail.styles';
+} from '../styles/detail/Detail.styles';
 import {TiArrowBackOutline} from 'react-icons/ti';
 import {Screen} from '../styles/card/Card.styles';
 import Loader from './Loader';
