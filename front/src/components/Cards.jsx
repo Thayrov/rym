@@ -1,5 +1,5 @@
 import {Card} from '.';
-import {Description} from '../styles/About/About.styles';
+import {Description} from '../styles/about/About.styles';
 import {CardsDiv} from '../styles/cards/Cards.styles';
 import CardSkeleton from './CardSkeleton';
 

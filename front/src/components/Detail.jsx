@@ -1,7 +1,7 @@
 import axios from 'axios';
 import {useNavigate, useParams} from 'react-router-dom';
 import {useCallback, useEffect, useState} from 'react';
-import {API_KEY, FALLBACK_URL, URL} from '../utils/consts';
+import {FALLBACK_URL} from '../utils/consts';
 import {
   BackButton,
   CharacterDetail,
