@@ -4,23 +4,15 @@ const {Sequelize} = require('sequelize');
 const FavoriteModel = require('../models/Favorite');
 const UserModel = require('../models/User');
 
-let dialectOptionsByEnv = {};
-
-if (process.env.TEST_MODE === 'development' || process.argv[2] === 'development') {
-  dialectOptionsByEnv = {};
-} else if (process.argv[2] === 'production') {
-  dialectOptionsByEnv = {
+const sequelize = new Sequelize(DB_CONN_STRING, {
+  logging: console.log('Connected to DB...'),
+  native: false,
+  dialectOptions: {
     ssl: {
       require: true,
       rejectUnauthorized: false,
     },
-  };
-}
-
-const sequelize = new Sequelize(DB_CONN_STRING, {
-  logging: console.log('Connected to DB...'),
-  native: false,
-  dialectOptions: dialectOptionsByEnv,
+  },
 });
 
 FavoriteModel(sequelize);
